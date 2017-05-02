@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/map"
+            android:title="@string/nav_map"></item>
+        <item
+            android:id="@+id/list"
+            android:title="@string/nav_list"></item>
+        <item
+            android:id="@+id/clues"
+            android:title="@string/nav_clue"></item>
+        <item
+            android:id="@+id/drawer_suspect"
+            android:title="@string/nav_suspect"></item>
+        <item
+            android:id="@+id/drawer_weapon_change"
+            android:title="@string/nav_weapon_change"></item>
+        <item
+            android:id="@+id/drawer_room_change"
+            android:title="@string/nav_room_change"></item>
+        <item
+            android:id="@+id/drawer_indict"
+            android:title="@string/nav_indict"></item>
+        <item
+            android:id="@+id/pause"
+            android:title="@string/nav_pause"></item>
+        <item
+            android:id="@+id/help"
+            android:title="@string/nav_help"></item>
+    </group>
+
+</menu>

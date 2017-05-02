@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+
+    android:background="?android:colorPrimaryDark">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="   "
+            android:id="@+id/txt_color_field"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:layout_marginTop="35dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/txt_name_of_thing"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/txt_name_of_room"
+                android:layout_alignStart="@+id/txt_name_of_room"
+                android:textColor="@color/colorFont"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/txt_name_of_room"
+                android:layout_alignParentTop="true"
+                android:layout_alignLeft="@+id/txt_name_of_weapon"
+                android:layout_alignStart="@+id/txt_name_of_weapon"
+                android:textColor="@color/colorFont"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/txt_name_of_weapon"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/txt_color_field"
+                android:layout_toEndOf="@+id/txt_color_field"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:textColor="@color/colorFont"
+                android:layout_marginTop="30dp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

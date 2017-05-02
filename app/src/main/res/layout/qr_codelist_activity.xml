@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=""
+    android:background="@color/colorBackground"
+    android:onClick="onClickCreateGame">
+
+    <FrameLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOtherTurn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QR Code for:"
+                        android:id="@+id/textView"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/recyclerview_qrnumber"
+                        android:layout_below="@+id/imageView4"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"/>
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_button"
+            android:id="@+id/button"
+            android:onClick="startWaitForPlayers"
+            android:textColor="@color/colorFont"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

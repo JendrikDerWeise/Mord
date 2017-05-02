@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+        applicationId "com.example.jendrik.moerder"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    // compile 'com.google.firebase:firebase-core:9.0.1'
+    // compile 'com.firebase:firebase-client-jvm:2.5.2'
+    provided "org.projectlombok:lombok:1.16.8"
+    compile 'com.android.support:appcompat-v7:23.+'
+    compile 'com.android.support:support-v4:23.+'
+    compile 'com.android.support:percent:23.+'
+    compile 'com.android.support:design:23.+'
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    compile 'com.google.firebase:firebase-auth:9.0.2'
+    compile 'com.google.android.gms:play-services-gcm:9.0.2'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.google.firebase:firebase-database:9.0.2'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+

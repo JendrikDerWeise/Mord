@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".WeaponNameList">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorOtherTurn"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
+
+        <FrameLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_weaponList"
+                    android:id="@+id/textView2"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorFont" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerview_weapons"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="12">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:id="@+id/button2"
+        android:onClick="onClickNextButtonW"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp" />
+</LinearLayout>
+
+</LinearLayout>

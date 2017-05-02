@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jendrik.moerder" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc"
+        android:required="true"/>
+
+    <permission
+        android:name="com.example.gcm.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".GUI.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:supportsRtl="true"
+        android:theme="@style/mordThemeNotTurn"
+        >
+        <service android:name=".FCM.MyFirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FCM.MyFcmListenerService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".GUI.Startscreen"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/mordThemeNotTurn" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GUI.Join.JoinGame"
+            android:screenOrientation="portrait"
+            android:label="Search for a game..." />
+        <activity
+            android:name=".GUI.Host.CreateGame"
+            android:screenOrientation="portrait"
+            android:label="@string/txt_create_game" />
+        <activity
+            android:name=".GUI.Host.RoomNameList"
+            android:screenOrientation="portrait"
+            android:label="@string/txt_create_game"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".GUI.Host.WeaponNameList"
+            android:screenOrientation="portrait"
+            android:label="@string/txt_create_game"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".GUI.Host.GivenQrCodes"
+            android:screenOrientation="portrait"
+            android:label="@string/txt_attach_qrcodes"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".GUI.Host.STUB"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GUI.Host.popupGivenQrCodes"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity android:name=".QR.QRHandler"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GUI.Host.WaitForPlayers"
+            android:screenOrientation="portrait"
+            android:label="@string/txt_wait_for_players" />
+        <activity android:name=".GUI.OnGamingClasses.MenuDrawer"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".GUI.LittleHelpers.ProsecutionHelpers.ProsecutionWaitingForPlayers"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GUI.LittleHelpers.PopUpNobodyHasCards"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity
+            android:name=".GUI.LittleHelpers.PopUpPlayerShowsCard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity android:name=".GUI.OnGamingClasses.WinScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GUI.OnGamingClasses.LooseScreen"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GUI.OnGamingClasses.STUB_SCANNER"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".GUI.Join.PopUpEnterName"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity
+            android:name=".GUI.Join.PopUpEnterPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.PopUpTheme" />
+        <activity android:name=".GUI.Join.WaitForServer"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".GUI.OnGamingClasses.RfidScanner"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.nfc.action.TECH_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+        </activity>
+    </application>
+
+</manifest>

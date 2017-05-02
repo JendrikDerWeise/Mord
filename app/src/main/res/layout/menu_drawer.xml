@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/drawerlayoutgesamt"
+        >
+
+        <!-- Activity Layout-->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/activitylayout"
+
+            >
+            <android.support.v7.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar1"
+                android:background="@color/colorPrimary"
+                android:fitsSystemWindows="true"
+                ></android.support.v7.widget.Toolbar>
+
+            <!-- Fragmentarea  -->
+
+            <FrameLayout
+                android:layout_below="@+id/toolbar1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/frag_area">
+            </FrameLayout>
+
+        </RelativeLayout>
+
+
+        <!-- Drawer Layout -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/drawerlayoutsingle"
+            android:layout_gravity="start"
+            android:background="#fff"
+            >
+
+            <android.support.design.widget.NavigationView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/navView"
+                app:menu="@menu/navigation_menu"
+                app:itemTextColor="@color/nav_color"
+                />
+
+        </RelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+<!--
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="TEST"
+        android:id="@+id/timer"
+        android:elegantTextHeight="false"
+        android:textStyle="bold"
+        android:theme="@style/mordTheme"
+        android:textSize="20dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+-->
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4eae2c</color>
+    <color name="colorPrimaryDark">#296d22</color>
+    <color name="colorNavi">#a9296d22</color>
+    <color name="colorBackground">#262626</color>
+    <color name="colorOtherTurn">#13445b</color>
+    <color name="colorOtherTurnLight">#1f657c</color>
+    <color name="colorFont">#ffffff</color>
+    <color name="colorOtherTurnAccent">#4195b0</color>
+
+
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="suspect_yes">#00ff00</color>
+    <color name="suspect_no">#ff0000</color>
+    <color name="suspect_maybe">#eeff00</color>
+    <color name="donotcross">#ffea00</color>
+</resources>

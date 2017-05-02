@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Mord</string>
+
+    <string name="donotcross" translatable="false"> DO NOT CROSS - DO NOT CROSS - DO NOT CROSS</string>
+    <string name="search">Search game</string>
+    <string name="rules">How to play</string>
+    <string name="host">Host game</string>
+    <string name="gameName">Name of the game:</string>
+    <string name="txt_pwd">Password: (optional)</string>
+    <string name="amount">Amount:</string>
+    <string name="countPlayers">Player:</string>
+    <string name="countRooms">Rooms:</string>
+    <string name="countWeapons">Weapons:</string>
+
+
+    <string name="next_button">Next</string>
+    <string name="txt_enterRoomName">Enter room names:</string>
+    <string name="txt_weaponList">Enter weapon names:</string>
+    <string name="popup_qrCodes">Please attach the following QR-Codes to your rooms and weapons.</string>
+    <string name="name_of_game">Game</string>
+    <string name="txt_player">Player</string>
+    <string name="btn_start_game">Start game</string>
+    <string name="txt_wait_for_players">Waiting for players...</string>
+    <string name="txt_create_game">Create a new game</string>
+    <string name="txt_attach_qrcodes">Attach QR-Codes</string>
+
+    <!-- Beginn Drawer-Temp-Krams -->
+    <string name="action_settings" translatable="false">whatever</string>
+    <string name="auf" translatable="false">open</string>
+    <string name="zu" translatable="false">close</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_list">List</string>
+    <string name="nav_suspect">Suspect</string>
+    <string name="nav_weapon_change">Change weapon</string>
+    <string name="nav_indict">Prosecute</string>
+    <string name="nav_pause">Pause</string>
+    <string name="nav_help">Help</string>
+    <string name="txt_indict">Place your prosecution:</string>
+    <string name="btn_indict">Prosecution</string>
+    <string name="txt_suspect">Say your suspect</string>
+    <string name="btn_suspect">Suspect</string>
+    <string name="spinner_default_player">Please select a player</string>
+    <string name="txt_nobody_has_cards">Wow! You´re damn right! Nobody has these cards.</string>
+    <string name="txt_shows_card">shows you the card:</string>
+    <string name="spinner_default_room">Please select room</string>
+    <string name="spinner_default_weapon">Please select weapon</string>
+    <string name="txt_are_you_sure">Are you really sure? If you´re wrong, you´ll loose and the game is over for you!</string>
+    <string name="btn_yes">Yes, damn sure!</string>
+    <string name="btn_no">No</string>
+    <string name="tab_person">Person</string>
+    <string name="tab_room">Room</string>
+    <string name="tab_weapon">Weapon</string>
+    <string name="txt_clues">These are your clues:</string>
+    <string name="nav_clue">Clues</string>
+    <string name="txt_minutes">Minutes:</string>
+    <string name="txt_seconds">Seconds:</string>
+    <string name="nav_room_change">Change room</string>
+    <string name="grp_room">Group room</string>
+    <string name="grp_room_weapon">No weapon</string>
+    <string name="txt_you_are_now">You are now in the</string>
+    <string name="txt_error_on_indict">You have to be in the group room to make a prosecution!</string>
+    <string name="error_change_eapon">There is no weapon in this room. Look at the map to find weapons.</string>
+    <string name="txt_error_on_suspect">You cannot be in the group room and you have to have a weapon with you!</string>
+    <string name="error_popup_password">Please enter a Password!</string>
+    <string name="error_popup_gamename">Gamename already taken. Please choose another one.</string>
+    <string name="error_popup_name">Playername already taken. Please choose another one.</string>
+    <string name="enter_player_name">Please enter your name...</string>
+    <string name="error_empty_gamename">"Gamename can´t be empty!"</string>
+    <string name="error_popup_room">This room already exists.</string>
+    <string name="error_popup_weapon">This weapon already exists.</string>
+
+
+    <string name="new_message_notification_title_template" translatable="false">New message: %1$s</string>
+
+    <string name="new_message_notification_placeholder_text_template" translatable="false">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+
+    <string name="action_share" translatable="false">Share</string>
+    <string name="action_reply" translatable="false">Reply</string>
+    <string name="popup_empty_textfield">All textfields must be filled out.</string>
+    <string name="error_empty_single_textfield">This field cannot be empty.</string>
+    <string name="popup_indict_message">This will call all players to the room of group. You should think twice!</string>
+    <string name="popup_indict_title">Do you really want to make a prosecution?</string>
+    <string name="popup_indict_positive">Got it, call players!</string>
+    <string name="popup_indict_negative_button">No, would be better if not...</string>
+    <string name="popup_indict_broadcast_title">There is a prosecution!</string>
+    <string name="popup_indict_broadcast_message">Go to the room of the group.</string>
+    <string name="tvWaitingForProsecution">Waiting for prosecution...</string>
+    <string name="prosecutionWasWrong">Prosecution was wrong. The player is dead now!</string>
+    <string name="popup_suspection_call_single_player_message">Go to room</string>
+    <string name="popup_suspection_call_single_player_title">A player called you in as a suspect!</string>
+    <string name="popup_suspection_result_broadcast_title">has the suspect:</string>
+    <string name="popup_suspection_result_broadcast_message">had shown one clue.</string>
+    <string name="popup_suspection_result_to_suspector_title">had shown you the clue:</string>
+    <string name="popup_back_message">You are ending the game that way. There is no coming back from that.</string>
+    <string name="popup_back_title">Have you thought that through?</string>
+    <string name="popup_back_positive">Yes, I am out!</string>
+    <string name="popup_back_negative_button">No, I would rather stay!</string>
+    <string name="popup_not_enough_players">You cannot start the game until all players joined.</string>
+    <string name="popup_suspection_have_clue_title">You have to show a clue!</string>
+    <string name="popup_suspection_have_clue_message">Show this clue:</string>
+    <string name="popup_wrong_qrcode">"Wrong QR Code scanned, try again."</string>
+    <string name="your_turn_txt">"Your turn"</string>
+    <string name="toolbar_text">"is playing"</string>
+    <string name="pros_will_place">A prosecution will be placed!</string>
+    <string name="tap_go_grproom">Tap and go to room of group.</string>
+    <string name="susp_placed">A suspection is called!</string>
+    <string name="nob_shwon_clue">Nobody has shown a clue.</string>
+    <string name="show_clue">You have to show a clue.</string>
+    <string name="tap_show_susp">Tap to see suspection.</string>
+    <string name="you_get_clue">There is a clue for you!</string>
+    <string name="player_looses">Your´ve lost the game.</string>
+    <string name="player_wins">Yeah, you´ve won the game!</string>
+    <string name="ask_playMode">Which game-mode?</string>
+    <string name="txt_game_mode">How would you like to read the game-tags? You cannot change mode while playing the game.</string>
+    <string name="rfid_scan">Please hold your phone on a RFID tag.</string>
+    <!-- Ende Drawer-Temp-Krams -->
+</resources>

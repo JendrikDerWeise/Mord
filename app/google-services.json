@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1054416328616",
+    "firebase_url": "https://project-3462685560901461074.firebaseio.com",
+    "project_id": "project-3462685560901461074",
+    "storage_bucket": "project-3462685560901461074.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054416328616:android:07ed84e8b27b2768",
+        "android_client_info": {
+          "package_name": "com.example.jendrik.moerder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054416328616-n42nqrsg2clfi6ftlv9obs5shnh831mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmnsm207g8zIENdtB8a6KVLSVLJ3BiNH4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
